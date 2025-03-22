@@ -90,6 +90,6 @@ def interest(principal, rate, periods):
     int
         the final value of the investment
     '''
-    simple_interest = principal * rate * periods
-    final_amount = principal + simple_interest
-    return math.floor(final_amount)
+    interest_amount= principal * rate * periods
+    final_amount = int(principal + interest_amount)
+    return final_amount
