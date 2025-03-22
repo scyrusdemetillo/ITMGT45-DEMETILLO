@@ -63,8 +63,6 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     remaining_material = total_material - total_consumed
     return f"{remaining_material}{material_units}"
 
-import math
-
 def interest(principal, rate, periods):
     '''Interest.
 
