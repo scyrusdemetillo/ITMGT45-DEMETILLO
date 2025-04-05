@@ -1,91 +1,114 @@
 <html>
-    <header>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Espresso</title>
     <style>
-     body{
-         background-color:#8B0000;
-            color:#FFFFFF;
-        text-align: center;    
-     }
-    
-    .header-image {
-        width: 500px;
-    }
-    
-    a { 
-        text-decoration : none; 
-        color : #FFFFFF; 
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #8B0000;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-    table {
-            width: 50%;
-            border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 18px;
+        header {
+            background-color: #6f4e37;
+            color: white;
+            padding: 10px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
             text-align: center;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
+
+        .coffeeindex {
+            width: 1000px;
         }
-        th {
-            background-color: #f4a460;
+
+        footer {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
         }
-     </style>
-     
+
+        .footer-links a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="coffee logo.png" alt="Digital Espresso Logo" style="height:50px;">
+                <h1 style="display: inline; margin-left: 10px;">Digital Espresso</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-         <body>
-        <h1>Coffee Aesthetics</h1>
-        <img class="header-image" src="coffee.jpeg"/>
-       
-        <table>
-                <tr><th><a href="index.html">Home</a></th>
-                <th><a href="products.html">Products</a></th>
-                <th><a href="branches.html">Branches</a></th>
-                <th><a href="aboutus.html">About</a></th></tr>
-        </table>
-    
 
-            <p></p>
-            <p></p>
+    <main>
+        <img src="coffeeindex.jpg" alt="Coffee Index Page" class="coffeeindex">
+        <p>Start your coffee journey here with us at Digital Espresso. Discover all our coffee offerings crafted from the highest quality ingredients that brings the most falvor.</p>
+    </main>
 
-            <h1>WELCOME</h1>
-            <p>YOUR COFFEE ADVENTURE STARTS NOW WHERE TASTE AND ENERGY MEETS!</p>
-
-         </body>
-
-         <footer>
-            <style>
-                footer {
-                    background-color: #6f4e37;
-                    color: white;
-                    text-align: center;
-                    padding: 20px;
-                    position: relative;
-                    bottom: 0;
-                    width: 100%;
-                    font-size: 16px;
-                }
-                
-
-                a { 
-        text-decoration : none; 
-        color : #FFFFFF; 
-        margin: 0 15px;
-    }
-
-            </style>
-                <p>&copy; 2025 Cofee Aesthetics. All Rights Reserved.</p>
-                    <a href="index.html">Home</a>
-                    <a href="aboutus.html">About Us</a>
-                    <a href="branches.html">Branches</a>
-
-                <p>Follow us on:
-                    <a href="#">Facebook</a> |
-                    <a href="#">Instagram</a> |
-                    <a href="#">Twitter</a>
-                </p>
-        </footer>
-        
+    <footer>
+        <p>&copy; 2025 Coffee Aesthetics. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="branches.html">Branches</a>
+        </div>
+        <p>Follow us on:
+            Facebook |
+            Instagram |
+            Twitter
+        </p>
+    </footer>
+</body>
 </html>
