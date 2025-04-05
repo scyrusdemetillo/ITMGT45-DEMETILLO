@@ -1,0 +1,172 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Espresso</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #8B0000;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #6f4e37;
+            color: white;
+            padding: 10px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0 15px;
+        }
+
+        .product-showcase {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product-image {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #f8d56b;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .description {
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-showcase {
+                flex-direction: column;
+            }
+            
+            .product-image {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="coffee logo.png" alt="Digital Espresso Logo" style="height:50px;">
+                <h1 style="display: inline; margin-left: 10px;">Digital Espresso</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Our Signature Americano</h1>
+       
+        <div class="product-showcase">
+            <img src="americano.jpeg" alt="Americano" class="product-image">
+            <div class="product-info">
+                <h2>Classic Americano</h2>
+                <div class="price">190</div>
+                <p class="description">
+                    Our Americano is crafted with a double shot of our premium espresso 
+                    blended with hot water to create a rich, smooth coffee with a 
+                    delightful crema. Perfect for those who enjoy a stronger coffee 
+                    experience without the intensity of straight espresso. Served in 
+                    a 12oz cup with optional milk or sweeteners on the side.
+                </p>
+                <p>
+                    <strong>Ingredients:</strong> Espresso, Hot Water<br>
+                    <p><strong>Serving Size:</strong> 12oz</p>
+                    <strong>Calories:</strong> 10 (without additions)
+                    <p><strong>Caffeine:</strong> 150mg</p>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Coffee Aesthetics. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="branches.html">Branches</a>
+        </div>
+        <p>Follow us on:
+            Facebook |
+            Instagram |
+            Twitter
+        </p>
+    </footer>
+</body>
+</html>
